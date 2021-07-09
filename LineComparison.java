@@ -15,12 +15,14 @@ public class LineComparison {
 		return lengthofline1;
 	}
 
-	/* Checking Equality between two lines using Equals method */
+	/* To compare the two lines */
 	public void CheckEquality(double Line1, double Line2) {
-		if (Line1 == Line2)
-			System.out.println("Both lines are of same length");
-		else
-			System.out.println("Both the lines are of different length");
+		if (Line1 > Line2)
+			System.out.println("Length of Line 1 is greater than the Length of Line 2");
+		else if (Line1 < Line2)
+			System.out.println("Length of Line 1 is lesser than the Length of Line 2");
+        else 
+	        System.out.println("Both the lines have equal length");
 	}
 
 	public static void main(String args[]) {
